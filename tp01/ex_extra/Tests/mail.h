@@ -12,13 +12,14 @@ public:
 	Mail(string send, string rec, string zcode);
 	virtual ~Mail();
 	string getZipCode() const;
-	unsigned int getPrice() const;
+	virtual unsigned int getPrice() const = 0;
 };
 
 
 class RegularMail: public Mail {
 	unsigned int weight;
 public:
+    unsigned int getPrice() const;
 	RegularMail(string send, string rec, string code, unsigned int w);
 };
 
@@ -26,6 +27,7 @@ public:
 class GreenMail: public Mail {
 	string type;  // "envelope", "bag", "box"
 public:
+    unsigned int getPrice() const;
 	GreenMail(string send, string rec, string code, string t);
 };
 
