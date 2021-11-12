@@ -528,10 +528,6 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/pedro/feup-aed/tp03/Tests/funSearchProblem.cpp
-funSearchProblem.h
-/home/pedro/feup-aed/tp03/Tests/funSearchProblem.h
-
 /home/pedro/feup-aed/tp03/Tests/funSearchProblem.h
 iostream
 -
@@ -545,10 +541,4 @@ gmock/gmock.h
 -
 funSearchProblem.h
 /home/pedro/feup-aed/tp03/Tests/funSearchProblem.h
-
-/home/pedro/feup-aed/tp03/main.cpp
-gtest/gtest.h
-/home/pedro/feup-aed/tp03/gtest/gtest.h
-gmock/gmock.h
-/home/pedro/feup-aed/tp03/gmock/gmock.h
 
