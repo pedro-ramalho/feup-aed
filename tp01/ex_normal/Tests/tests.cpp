@@ -30,7 +30,7 @@ TEST(test_1, adicionarCliente){
     // Testa se retorna -1 caso o cliente nao exista
     EXPECT_EQ(-1, p1.posicaoCliente("Joana"));
 }
-/*
+
 TEST(test_1, entrarParque){
     ParqueEstacionamento p1(3, 5);
     p1.adicionaCliente("Joao");
@@ -93,4 +93,4 @@ TEST(test_1, lugaresLotacaoParque){
     // Testa se o o numero de clientes registados no parque esta correcto
     EXPECT_EQ(3, p1.getNumClientesAtuais());
 }
-*/
+
