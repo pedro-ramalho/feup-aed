@@ -31,7 +31,7 @@ TEST(test_1, max){
 
 }
 
-/*TEST(test_1, hasDuplicates){
+TEST(test_1, hasDuplicates){
     MyVector<int> v;
 
     v.push_back(4); v.push_back(33);
@@ -76,7 +76,7 @@ TEST(test_1, removeDuplicates){
     EXPECT_EQ(20, vx[6]);
     EXPECT_EQ(44, vx[7]);
 }
-
+/*
 
 TEST(test_2, fibonacci_1){
     EXPECT_EQ(0, fibonacci_1(0));

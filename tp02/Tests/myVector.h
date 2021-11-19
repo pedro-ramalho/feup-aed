@@ -43,27 +43,29 @@ vector<T> MyVector<T>::getValues() const {
 // TODO
 template <class T>
 T MyVector<T>::max() const {
-    try {
-        if (values.empty())
-            throw EmptyVector();
-        T curr_max = values[0];
-        for (int i = 0; i < values.size(); i++)
-            if (values[i] > curr_max)
-                curr_max = values[i];
-        return curr_max;
-    } catch (EmptyVector& e) {
-
-    }
+    if (values.empty())
+        throw EmptyVector();
+    return *max_element(values.begin(), values.end());
 }
 
 // TODO
 template<class T>
 bool MyVector<T>::hasDuplicates() const {
-	return true;
+    for (int i = 0; i < values.size() - 1; i++)
+        for (int j = i + 1; j < values.size(); j++)
+            if (values[i] == values[j])
+                return true;
+    return false;
 }
 
 // TODO
 template<class T>
 void MyVector<T>::removeDuplicates() {
+    for (int i = 0; i < values.size() - 1; i++)
+        for (int j = i + 1; j < values.size(); j++)
+            if (values[i] == values[j]) {
+                values.erase(values.begin() + j);
+                j--;
+            }
 }
 
