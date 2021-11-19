@@ -5,7 +5,7 @@
 
 using testing::Eq;
 
-/*
+
 TEST(test_1, abrirParque){
     ParqueEstacionamento p1(4, 6);
     // Testa se o parque foi aberto com a lotacao indicada
@@ -30,7 +30,7 @@ TEST(test_1, adicionarCliente){
     // Testa se retorna -1 caso o cliente nao exista
     EXPECT_EQ(-1, p1.posicaoCliente("Joana"));
 }
-
+/*
 TEST(test_1, entrarParque){
     ParqueEstacionamento p1(3, 5);
     p1.adicionaCliente("Joao");

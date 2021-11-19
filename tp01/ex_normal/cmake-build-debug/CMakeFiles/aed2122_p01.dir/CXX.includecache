@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pedro/feup-aed/tp01/ex_normal/Tests/parque.cpp
+parque.h
+/home/pedro/feup-aed/tp01/ex_normal/Tests/parque.h
+vector
+-
+parque.h
+/home/pedro/feup-aed/tp01/ex_normal/Tests/parque.h
+
+/home/pedro/feup-aed/tp01/ex_normal/Tests/parque.h
+iostream
+-
+string
+-
+vector
+-
+
