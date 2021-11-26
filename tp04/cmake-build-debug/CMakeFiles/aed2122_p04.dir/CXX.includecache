@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/up202004715/Desktop/tp04/Tests/funSortProblem.cpp
+funSortProblem.h
+C:/Users/up202004715/Desktop/tp04/Tests/funSortProblem.h
+algorithm
+-
+
+C:/Users/up202004715/Desktop/tp04/Tests/funSortProblem.h
+iostream
+-
+vector
+-
+product.h
+C:/Users/up202004715/Desktop/tp04/Tests/product.h
+piece.h
+C:/Users/up202004715/Desktop/tp04/Tests/piece.h
+
+C:/Users/up202004715/Desktop/tp04/Tests/piece.h
+string
+-
+
+C:/Users/up202004715/Desktop/tp04/Tests/product.h
+string
+-
+
