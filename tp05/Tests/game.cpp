@@ -63,7 +63,14 @@ Kid Game::loseGame(string phrase) {
 
 // TODO
 list<Kid> Game::removeOlder(unsigned id) {
-    return (list<Kid>());
+    list<Kid> result;
+    for (list<Kid>::iterator it = kids.begin(); it != kids.end(); ++it)
+        if ((*it).getAge() > id) {
+            result.push_back(*it);
+            it = kids.erase(it);
+        }
+
+    return result;
 }
 
 // TODO
@@ -112,10 +119,43 @@ queue<Kid> Game::rearrange() {
 
 // TODO
 bool Game::operator==(Game& g2) {
+    list<Kid> g2_kids = g2.getKids();
+    list<Kid>::iterator it2 = g2_kids.begin();
+
+    if (g2_kids.size() != kids.size()) {
+        return false;
+    } else {
+        for (list<Kid>::iterator it = kids.begin(); it != kids.end(); ++it) {
+            if ((*it).getName() != (*it2).getName()) {
+                return false;
+            } else if ((*it).getAge() != (*it2).getAge()) {
+                return false;
+            }
+            it2++;
+        }
+    }
+
 	return true;
 }
 
 // TODO
 list<Kid> Game::shuffle() const {
-	return (list<Kid>());
+    list<Kid> aux;
+    list<Kid> result;
+
+    for (Kid kid : kids)
+        aux.push_back(kid);
+
+    list<Kid>::iterator it = aux.begin();
+    int size = kids.size();
+
+    while (result.size() != kids.size()) {
+        int random = rand() % size;
+        for (int i = 0; i < random; i++)
+            it++;
+        result.push_back(*it);
+        it = aux.begin();
+    }
+
+	return (result);
 }

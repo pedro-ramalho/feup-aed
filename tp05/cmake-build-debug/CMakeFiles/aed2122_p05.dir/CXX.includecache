@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/up202004715/Desktop/tp05/Tests/game.cpp
+/home/pedro/feup-aed/tp05/Tests/game.cpp
 game.h
-C:/Users/up202004715/Desktop/tp05/Tests/game.h
+/home/pedro/feup-aed/tp05/Tests/game.h
 cstdlib
 -
 ctime
@@ -16,9 +16,9 @@ ctime
 iostream
 -
 
-C:/Users/up202004715/Desktop/tp05/Tests/game.h
+/home/pedro/feup-aed/tp05/Tests/game.h
 kid.h
-C:/Users/up202004715/Desktop/tp05/Tests/kid.h
+/home/pedro/feup-aed/tp05/Tests/kid.h
 list
 -
 queue
@@ -26,7 +26,7 @@ queue
 string
 -
 
-C:/Users/up202004715/Desktop/tp05/Tests/kid.h
+/home/pedro/feup-aed/tp05/Tests/kid.h
 string
 -
 sstream
