@@ -1,0 +1,6 @@
+# ninja log v5
+10	462	1638311273370619006	CMakeFiles/aed2122_p06.dir/Tests/game.cpp.o	a686b92674704b6f
+18	943	1638311273854634050	lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	eb2488d946afb4cd
+0	1118	1638311274026639396	CMakeFiles/aed2122_p06.dir/main.cpp.o	f7315314985ac377
+2	1734	1638311274642658543	CMakeFiles/aed2122_p06.dir/Tests/tests.cpp.o	d4cfec1ce71611ee
+29	3977	1638311276882728168	lib/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	6176626b808708e9
