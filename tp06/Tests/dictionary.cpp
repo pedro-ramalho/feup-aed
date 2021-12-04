@@ -32,22 +32,17 @@ BST<WordMean> Dictionary::getWords() const {
 //TODO
 void Dictionary::readFile(ifstream &f) {
     int counter = 0;
-    vector<string> word = {};
-    vector<string> meaning = {};
-    ifstream dicFile("dic.txt");
-    string text;
-    while (getline(dicFile, text)) {
-        if (counter % 2 == 0) {
-            word.push_back(text);
-        } else {
-            meaning.push_back(text);
-        }
+    string line;
+    vector<string> word;
+    vector<string> meaning;
+
+    while(getline(f,line)) {
+        counter % 2 == 0 ? word.push_back(line.substr(0, line.size()-1)) : meaning.push_back(line.substr(0,line.size()-1));
         counter++;
     }
-    for (int i = 0; i < word.size(); i++) {
-        WordMean curr_word(word[i], meaning[i]);
-        words.insert(curr_word);
-    }
+
+    for (int i = 0; i < word.size(); i++)
+        words.insert(WordMean(word[i], meaning[i]));
 }
 
 //TODO

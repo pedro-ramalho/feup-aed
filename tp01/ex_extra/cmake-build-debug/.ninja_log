@@ -1,0 +1,18 @@
+# ninja log v5
+1	171	1638635260782275979	CMakeFiles/aed2122_p01_extra.dir/Tests/mail.cpp.o	19bf6d90efb797c5
+1	268	1638635260878279116	CMakeFiles/aed2122_p01_extra.dir/Tests/postman.cpp.o	ebe07d72a945469f
+1	342	1638635260950281469	CMakeFiles/aed2122_p01_extra.dir/Tests/postOffice.cpp.o	574dffcb411485c9
+1	684	1638635261294292707	lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	4a243a331880abe6
+0	946	1638635261558301333	CMakeFiles/aed2122_p01_extra.dir/main.cpp.o	3d37b0839d895204
+0	1076	1638635261686305514	CMakeFiles/aed2122_p01_extra.dir/Tests/tests.cpp.o	551118739ae0adb0
+2	3339	1638635263946379341	lib/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	23093acceafd5d10
+3339	3392	1638635263990380779	lib/libgtestd.a	9c10ef39afee8b8a
+3392	3408	1638635264018381693	lib/libgtest_maind.a	888bad5a6c448188
+3408	3560	1638635264170386657	aed2122_p01_extra	3fa3998e5de2e94f
+1	348	1638635508050245626	CMakeFiles/aed2122_p01_extra.dir/Tests/postOffice.cpp.o	574dffcb411485c9
+0	1198	1638635508898272639	CMakeFiles/aed2122_p01_extra.dir/Tests/tests.cpp.o	551118739ae0adb0
+4	327	1638635624557940574	CMakeFiles/aed2122_p01_extra.dir/Tests/postOffice.cpp.o	574dffcb411485c9
+0	1080	1638635625309964326	CMakeFiles/aed2122_p01_extra.dir/Tests/tests.cpp.o	551118739ae0adb0
+2	382	1638635645694607719	CMakeFiles/aed2122_p01_extra.dir/Tests/postOffice.cpp.o	574dffcb411485c9
+1	1153	1638635646466632070	CMakeFiles/aed2122_p01_extra.dir/Tests/tests.cpp.o	551118739ae0adb0
+1153	1305	1638635646618636864	aed2122_p01_extra	3fa3998e5de2e94f

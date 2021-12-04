@@ -13,6 +13,9 @@ public:
     string getMeaning() const;
     void setMeaning(string m);
     void setWord(string w);
+    bool operator < (const WordMean &w) const {
+        return word < w.getWord();
+    }
 };
 
 class Dictionary

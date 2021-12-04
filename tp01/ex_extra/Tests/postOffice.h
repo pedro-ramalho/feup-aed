@@ -29,13 +29,11 @@ public:
 // TODO
 class NoPostmanException
 {
+private:
+    const string name;
 public:
-	   string getName() const {return ""; }
+    NoPostmanException(const string &name);
+    string getName() const;
 };
-
-
-
-
-
 
 #endif /* SRC_POSTOFFICE_H_ */

@@ -66,7 +66,13 @@ vector<Mail *> PostOffice::endOfDay(unsigned int &balance) {
 
 
 Postman PostOffice::addMailToPostman(Mail *m, string name) {
-	Postman p1;
-    return p1;
+	for (Postman postman : postmen)
+        if (postman.getName() == name) {
+            postman.addMail(m);
+            return postman;
+        }
+    throw NoPostmanException(name);
 }
 
+string NoPostmanException::getName() const {return name;}
+NoPostmanException::NoPostmanException(const string &name) : name(name) {}
