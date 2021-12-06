@@ -41,8 +41,14 @@ int FunSearchProblem::squareR(int num) {
 
 // TODO
 int FunSearchProblem::smallestMissingValue(const vector<int> & values) {
-
-    return 0;
+    int missing_value = 1;
+    while (true) {
+        auto it = std::find(values.begin(), values.end(), missing_value);
+        if (it == values.end())
+            break;
+        missing_value++;
+    }
+    return missing_value;
 }
 
 // TODO

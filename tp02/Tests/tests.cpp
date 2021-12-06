@@ -76,7 +76,7 @@ TEST(test_1, removeDuplicates){
     EXPECT_EQ(20, vx[6]);
     EXPECT_EQ(44, vx[7]);
 }
-/*
+
 
 TEST(test_2, fibonacci_1){
     EXPECT_EQ(0, fibonacci_1(0));
@@ -95,4 +95,4 @@ TEST(test_2, fibonacci_2){
     EXPECT_EQ(13, fibonacci_2(7));
     EXPECT_EQ(144, fibonacci_2(12));
     EXPECT_EQ(2584, fibonacci_2(18));
-}*/
+}

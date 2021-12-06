@@ -14,7 +14,8 @@ TEST(test, squareR){
 }
 
 TEST(test, missingvalue){
-
+    vector<int> test = {-1, -3, 0, 2, 3, 4, 5, 6, 7, 8, 9};
+    EXPECT_EQ(1, FunSearchProblem::smallestMissingValue(test));
 }
 
 TEST(test, minPages){

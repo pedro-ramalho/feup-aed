@@ -39,13 +39,22 @@ int FunSortProblem::minDifference(const vector<unsigned> &values, unsigned nc) {
 
 // TODO
 unsigned FunSortProblem::minPlatforms (const vector<float> &arrival, const vector<float> &departure) {
-    return 0;
+    int platforms = 0;
+    for (int i = 0; i < arrival.size() - 1; i++)
+        if (departure[i] > arrival[i+1])
+            platforms++;
+
+    if (platforms == 0)
+        return 1;
+    else
+        return platforms;
 }
 
 
 // TODO
 
 void FunSortProblem::nutsBolts(vector<Piece> &nuts, vector<Piece> &bolts) {
-
+    sort(nuts.begin(), nuts.end(), [](Piece &p1, Piece &p2) -> bool {return p1.getDiameter() < p2.getDiameter();});
+    sort(bolts.begin(), bolts.end(), [](Piece &p1, Piece &p2) -> bool {return p1.getDiameter() < p2.getDiameter();});
 }
 

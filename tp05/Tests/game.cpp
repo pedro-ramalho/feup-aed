@@ -140,22 +140,18 @@ bool Game::operator==(Game& g2) {
 
 // TODO
 list<Kid> Game::shuffle() const {
-    list<Kid> aux;
-    list<Kid> result;
-
-    for (Kid kid : kids)
-        aux.push_back(kid);
-
-    list<Kid>::iterator it = aux.begin();
+    list<Kid> result, aux = kids;
     int size = kids.size();
-
-    while (result.size() != kids.size()) {
+    while (!aux.empty()) {
         int random = rand() % size;
-        for (int i = 0; i < random; i++)
-            it++;
-        result.push_back(*it);
-        it = aux.begin();
+        if (random) {
+            result.push_back(aux.back());
+            aux.pop_back();
+        } else {
+            result.push_back(aux.front());
+            aux.pop_front();
+        }
+        size--;
     }
-
-	return (result);
+    return result;
 }
