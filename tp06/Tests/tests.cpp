@@ -26,7 +26,9 @@ TEST(test_1, a_createDictionary) {
         it.advance();
         EXPECT_EQ("gato", it.retrieve().getWord());
     }
-}/*TEST(test_1, b_printDictionary) {
+}
+
+TEST(test_1, b_printDictionary) {
     cout<<endl<<"Testing 'printDictionary'"<<endl;
     ifstream f;
     f.open("dic.txt");
@@ -165,6 +167,6 @@ TEST(test_2, c_MostVisited) {
 
     game1.play(); game1.play(); game1.play();game1.play();
     EXPECT_EQ(4, game1.mostVisited());
-}*/
+}
 
 

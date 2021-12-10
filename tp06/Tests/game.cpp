@@ -36,6 +36,8 @@ BinaryTree<Circle>& Game::getGame() {
 
 //TODO
 Game::Game(int height, vector<int>& points, vector<bool>& states) {
+    BTNode<Circle> root(Circle(points[0], states[0]), NULL, NULL);
+
 }
 
 //TODO

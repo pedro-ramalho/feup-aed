@@ -45,7 +45,7 @@ cmake_ninja_workdir = /home/pedro/feup-aed/tp06/cmake-build-debug/
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -79,6 +79,8 @@ build CMakeFiles/aed2122_p06.dir/main.cpp.o: CXX_COMPILER__aed2122_p06_Debug /ho
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = CMakeFiles/aed2122_p06.dir
   OBJECT_FILE_DIR = CMakeFiles/aed2122_p06.dir
+  TARGET_COMPILE_PDB = CMakeFiles/aed2122_p06.dir/
+  TARGET_PDB = ../Tests/aed2122_p06.pdb
 
 build CMakeFiles/aed2122_p06.dir/Tests/tests.cpp.o: CXX_COMPILER__aed2122_p06_Debug /home/pedro/feup-aed/tp06/Tests/tests.cpp || cmake_object_order_depends_target_aed2122_p06
   DEP_FILE = CMakeFiles/aed2122_p06.dir/Tests/tests.cpp.o.d
@@ -86,6 +88,8 @@ build CMakeFiles/aed2122_p06.dir/Tests/tests.cpp.o: CXX_COMPILER__aed2122_p06_De
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = CMakeFiles/aed2122_p06.dir
   OBJECT_FILE_DIR = CMakeFiles/aed2122_p06.dir/Tests
+  TARGET_COMPILE_PDB = CMakeFiles/aed2122_p06.dir/
+  TARGET_PDB = ../Tests/aed2122_p06.pdb
 
 build CMakeFiles/aed2122_p06.dir/Tests/dictionary.cpp.o: CXX_COMPILER__aed2122_p06_Debug /home/pedro/feup-aed/tp06/Tests/dictionary.cpp || cmake_object_order_depends_target_aed2122_p06
   DEP_FILE = CMakeFiles/aed2122_p06.dir/Tests/dictionary.cpp.o.d
@@ -93,6 +97,8 @@ build CMakeFiles/aed2122_p06.dir/Tests/dictionary.cpp.o: CXX_COMPILER__aed2122_p
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = CMakeFiles/aed2122_p06.dir
   OBJECT_FILE_DIR = CMakeFiles/aed2122_p06.dir/Tests
+  TARGET_COMPILE_PDB = CMakeFiles/aed2122_p06.dir/
+  TARGET_PDB = ../Tests/aed2122_p06.pdb
 
 build CMakeFiles/aed2122_p06.dir/Tests/game.cpp.o: CXX_COMPILER__aed2122_p06_Debug /home/pedro/feup-aed/tp06/Tests/game.cpp || cmake_object_order_depends_target_aed2122_p06
   DEP_FILE = CMakeFiles/aed2122_p06.dir/Tests/game.cpp.o.d
@@ -100,6 +106,8 @@ build CMakeFiles/aed2122_p06.dir/Tests/game.cpp.o: CXX_COMPILER__aed2122_p06_Deb
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = CMakeFiles/aed2122_p06.dir
   OBJECT_FILE_DIR = CMakeFiles/aed2122_p06.dir/Tests
+  TARGET_COMPILE_PDB = CMakeFiles/aed2122_p06.dir/
+  TARGET_PDB = ../Tests/aed2122_p06.pdb
 
 
 # =============================================================================
@@ -115,15 +123,16 @@ build ../Tests/aed2122_p06: CXX_EXECUTABLE_LINKER__aed2122_p06_Debug CMakeFiles/
   OBJECT_DIR = CMakeFiles/aed2122_p06.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/aed2122_p06.dir/
   TARGET_FILE = ../Tests/aed2122_p06
-  TARGET_PDB = aed2122_p06.dbg
+  TARGET_PDB = ../Tests/aed2122_p06.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /snap/clion/175/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -134,7 +143,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /snap/clion/175/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -146,7 +155,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /snap/clion/175/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -169,7 +178,7 @@ build list_install_components: phony
 # Utility command for install/strip
 
 build lib/googletest-master/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-master/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -181,7 +190,7 @@ build lib/googletest-master/install/strip: phony lib/googletest-master/CMakeFile
 # Utility command for install/local
 
 build lib/googletest-master/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-master/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -193,7 +202,7 @@ build lib/googletest-master/install/local: phony lib/googletest-master/CMakeFile
 # Utility command for edit_cache
 
 build lib/googletest-master/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /snap/clion/175/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -204,7 +213,7 @@ build lib/googletest-master/edit_cache: phony lib/googletest-master/CMakeFiles/e
 # Utility command for rebuild_cache
 
 build lib/googletest-master/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /snap/clion/175/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -222,7 +231,7 @@ build lib/googletest-master/list_install_components: phony
 # Utility command for install
 
 build lib/googletest-master/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-master/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /snap/clion/175/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -239,7 +248,7 @@ build lib/googletest-master/install: phony lib/googletest-master/CMakeFiles/inst
 # Utility command for install/strip
 
 build lib/googletest-master/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-master/googlemock/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -251,7 +260,7 @@ build lib/googletest-master/googlemock/install/strip: phony lib/googletest-maste
 # Utility command for install/local
 
 build lib/googletest-master/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-master/googlemock/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -263,7 +272,7 @@ build lib/googletest-master/googlemock/install/local: phony lib/googletest-maste
 # Utility command for install
 
 build lib/googletest-master/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-master/googlemock/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /snap/clion/175/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -291,6 +300,8 @@ build lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.
   INCLUDES = -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googlemock -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgmock_maind.pdb
+  TARGET_PDB = bin/libgmock_maind.pdb
 
 
 # =============================================================================
@@ -305,8 +316,9 @@ build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug lib/goog
   OBJECT_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmock_maind.pdb
   TARGET_FILE = lib/libgmock_maind.a
-  TARGET_PDB = gmock_maind.a.dbg
+  TARGET_PDB = bin/libgmock_maind.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock
@@ -323,6 +335,8 @@ build lib/googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: 
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock/include -I/home/pedro/feup-aed/tp06/lib/googletest-master/googlemock -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock.dir/src
+  TARGET_COMPILE_PDB = bin/libgmockd.pdb
+  TARGET_PDB = bin/libgmockd.pdb
 
 
 # =============================================================================
@@ -337,15 +351,16 @@ build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug lib/googletest-mas
   OBJECT_DIR = lib/googletest-master/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmockd.pdb
   TARGET_FILE = lib/libgmockd.a
-  TARGET_PDB = gmockd.a.dbg
+  TARGET_PDB = bin/libgmockd.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build lib/googletest-master/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /snap/clion/175/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -356,7 +371,7 @@ build lib/googletest-master/googlemock/edit_cache: phony lib/googletest-master/g
 # Utility command for rebuild_cache
 
 build lib/googletest-master/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /snap/clion/175/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googlemock && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -373,7 +388,7 @@ build lib/googletest-master/googlemock/rebuild_cache: phony lib/googletest-maste
 # Utility command for install/strip
 
 build lib/googletest-master/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-master/googletest/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -385,7 +400,7 @@ build lib/googletest-master/googletest/install/strip: phony lib/googletest-maste
 # Utility command for install/local
 
 build lib/googletest-master/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-master/googletest/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /snap/clion/175/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -397,7 +412,7 @@ build lib/googletest-master/googletest/install/local: phony lib/googletest-maste
 # Utility command for install
 
 build lib/googletest-master/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-master/googletest/all
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /snap/clion/175/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -425,6 +440,8 @@ build lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.
   INCLUDES = -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -isystem /home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = lib/googletest-master/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgtest_maind.pdb
+  TARGET_PDB = bin/libgtest_maind.pdb
 
 
 # =============================================================================
@@ -439,15 +456,16 @@ build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug lib/goog
   OBJECT_DIR = lib/googletest-master/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtest_maind.pdb
   TARGET_FILE = lib/libgtest_maind.a
-  TARGET_PDB = gtest_maind.a.dbg
+  TARGET_PDB = bin/libgtest_maind.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build lib/googletest-master/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /snap/clion/175/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -468,6 +486,8 @@ build lib/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: 
   INCLUDES = -I/home/pedro/feup-aed/tp06/lib/googletest-master/googletest/include -I/home/pedro/feup-aed/tp06/lib/googletest-master/googletest
   OBJECT_DIR = lib/googletest-master/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = lib/googletest-master/googletest/CMakeFiles/gtest.dir/src
+  TARGET_COMPILE_PDB = bin/libgtestd.pdb
+  TARGET_PDB = bin/libgtestd.pdb
 
 
 # =============================================================================
@@ -482,15 +502,16 @@ build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug lib/googletest-mas
   OBJECT_DIR = lib/googletest-master/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtestd.pdb
   TARGET_FILE = lib/libgtestd.a
-  TARGET_PDB = gtestd.a.dbg
+  TARGET_PDB = bin/libgtestd.pdb
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build lib/googletest-master/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /snap/clion/175/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
+  COMMAND = cd /home/pedro/feup-aed/tp06/cmake-build-debug/lib/googletest-master/googletest && /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/pedro/feup-aed/tp06 -B/home/pedro/feup-aed/tp06/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -556,14 +577,14 @@ build lib/googletest-master/googletest/all: phony lib/libgtest_maind.a lib/libgt
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../lib/googletest-master/CMakeLists.txt ../lib/googletest-master/googlemock/CMakeLists.txt ../lib/googletest-master/googlemock/cmake/gmock.pc.in ../lib/googletest-master/googlemock/cmake/gmock_main.pc.in ../lib/googletest-master/googletest/CMakeLists.txt ../lib/googletest-master/googletest/cmake/Config.cmake.in ../lib/googletest-master/googletest/cmake/gtest.pc.in ../lib/googletest-master/googletest/cmake/gtest_main.pc.in ../lib/googletest-master/googletest/cmake/internal_utils.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDependentOption.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPython.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPython/Support.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../lib/googletest-master/CMakeLists.txt ../lib/googletest-master/googlemock/CMakeLists.txt ../lib/googletest-master/googlemock/cmake/gmock.pc.in ../lib/googletest-master/googlemock/cmake/gmock_main.pc.in ../lib/googletest-master/googletest/CMakeLists.txt ../lib/googletest-master/googletest/cmake/Config.cmake.in ../lib/googletest-master/googletest/cmake/gtest.pc.in ../lib/googletest-master/googletest/cmake/gtest_main.pc.in ../lib/googletest-master/googletest/cmake/internal_utils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDependentOption.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystem.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.c.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPython.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPython/Support.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Determine-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../lib/googletest-master/CMakeLists.txt ../lib/googletest-master/googlemock/CMakeLists.txt ../lib/googletest-master/googlemock/cmake/gmock.pc.in ../lib/googletest-master/googlemock/cmake/gmock_main.pc.in ../lib/googletest-master/googletest/CMakeLists.txt ../lib/googletest-master/googletest/cmake/Config.cmake.in ../lib/googletest-master/googletest/cmake/gtest.pc.in ../lib/googletest-master/googletest/cmake/gtest_main.pc.in ../lib/googletest-master/googletest/cmake/internal_utils.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDependentOption.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPython.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindPython/Support.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /snap/clion/175/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../lib/googletest-master/CMakeLists.txt ../lib/googletest-master/googlemock/CMakeLists.txt ../lib/googletest-master/googlemock/cmake/gmock.pc.in ../lib/googletest-master/googlemock/cmake/gmock_main.pc.in ../lib/googletest-master/googletest/CMakeLists.txt ../lib/googletest-master/googletest/cmake/Config.cmake.in ../lib/googletest-master/googletest/cmake/gtest.pc.in ../lib/googletest-master/googletest/cmake/gtest_main.pc.in ../lib/googletest-master/googletest/cmake/internal_utils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDependentOption.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystem.cmake.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckFunctionExists.c /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.c.in /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckIncludeFile.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CheckLibraryExists.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPython.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindPython/Support.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/FindThreads.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/GNUInstallDirs.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-Determine-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-CXX.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

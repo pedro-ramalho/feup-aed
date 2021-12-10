@@ -27,6 +27,16 @@ BST<WordMean> Dictionary::getWords() const {
 	return words;
 }
 
+bool operator <(const WordMean& w1, const WordMean& w2) {
+    return w1.word < w2.word;
+}
+
+ostream& operator <<(ostream& os, const WordMean& word) {
+    os << word.word << endl << word.meaning;
+    return os;
+}
+
+
 // ---------------------------------------------
 
 //TODO
@@ -47,14 +57,35 @@ void Dictionary::readFile(ifstream &f) {
 
 //TODO
 string Dictionary::consult(string word1, WordMean& previous, WordMean& next) const {
-    return "";
+    for (auto it = words.begin(); it != words.end(); it++)
+        if ((*it).getWord() == word1)
+            return (*it).getMeaning();
+
+    for (auto new_it = words.begin(); new_it != words.end(); new_it++) {
+        if ((*new_it).getWord() < word1)
+            previous = *new_it;
+        if ((*new_it).getWord() > word1) {
+            next = *new_it;
+            break;
+        }
+    }
+
+    return "word not found";
 }
 
 //TODO
 bool Dictionary::update(string word1, string mean1) {
+    if (words.find(WordMean(word1, mean1)).getWord() == string()) {
+        words.insert(WordMean(word1, mean1));
+        return false;
+    }
+    words.remove(words.find(WordMean(word1, mean1)));
+    words.insert(WordMean(word1, mean1));
     return true;
 }
 
 //TODO
 void Dictionary::print() const {
+    words.printTree();
 }
+
