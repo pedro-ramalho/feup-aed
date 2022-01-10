@@ -71,6 +71,7 @@ void Graph::bfs(int v) {
     }
 }
 
+// Breadth-First Search: returns the distances between nodes a and b
 int Graph::bfs_distances(int a, int b) {
     if (a == b) return 0;
 
