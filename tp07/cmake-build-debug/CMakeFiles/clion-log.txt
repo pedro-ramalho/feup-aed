@@ -1,0 +1,4 @@
+/home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/pedro/Downloads/CLion-2021.3/clion-2021.3/bin/ninja/linux/ninja -G Ninja /home/pedro/feup-aed/tp07
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pedro/feup-aed/tp07/cmake-build-debug
